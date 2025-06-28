@@ -1,0 +1,13 @@
+import json
+
+with open('octra_wallet_DUfLy4GL_1751118413.txt', 'r') as f:
+    content = f.read()
+
+data = {
+    "wallet_data": content
+}
+
+with open('octra_wallet_DUfLy4GL_1751118413.json', 'w') as f:
+    json.dump(data, f, indent=4)
+
+print("File berhasil dikonversi ke JSON.")
